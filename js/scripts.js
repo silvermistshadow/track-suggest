@@ -37,15 +37,15 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
   if (languageType === 0) {
     ++langRuby;
     ++langPHP;
-    $("languageTypeError").hide()
+    $("languageTypeError").hide();
   }
   else if (languageType === 1) {
     ++langC;
-    $("languageTypeError").hide()
+    $("languageTypeError").hide();
   }
   else if (languageType === 2) {
     ++langJava;
-    $("languageTypeError").hide()
+    $("languageTypeError").hide();
   }
   else {
     $("languageTypeError").show();
