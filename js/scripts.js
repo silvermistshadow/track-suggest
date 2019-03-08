@@ -35,16 +35,16 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
   }
 
   if (languageType === 0) {
-    ++langRuby
-    ++langPHP
+    ++langRuby;
+    ++langPHP;
     $("languageTypeError").hide()
   }
   else if (languageType === 1) {
-    ++langC
+    ++langC;
     $("languageTypeError").hide()
   }
   else if (languageType === 2) {
-    ++langJava
+    ++langJava;
     $("languageTypeError").hide()
   }
   else {
@@ -52,28 +52,28 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
   }
 
   if ((langC > langJava) && (langC > langPHP) && (langC > langRuby)) {
-      return "You should study C#!"
+      return "You should study C#!";
   }
   else if ((langJava > langC) && (langJava > langPHP) && (langJava langRuby)) {
-    return "You should study Java!"
+    return "You should study Java!";
   }
   else if ((langPHP > langC) && (langPHP > langJava) && (langPHP > langRuby)) {
-    return "You should study PHP!"
+    return "You should study PHP!";
   }
   else if ((langRuby > langC) && (langRuby > langJava) && (langRuby > langPHP)) {
-    return "You should study Ruby!"
+    return "You should study Ruby!";
   }
   else if ((langC === langJava) && (langC > langPHP) && (langC > langRuby)) {
-      return "You should study C# and Java!"
+      return "You should study C# and Java!";
   }
   else if ((langC === langPHP) && (langC > langJava) && (langC > langRuby)) {
-    return "You should study C# and PHP!"
+    return "You should study C# and PHP!";
   }
   else if ((langC === langRuby) && (langC > langJava) && (langC > langPHP)) {
-    return "You should study C# and Ruby!"
+    return "You should study C# and Ruby!";
   }
   else {
-    return "There are several languages you may want to study."
+    return "There are several languages you may want to study.";
   }
 
 }
