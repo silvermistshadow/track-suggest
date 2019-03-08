@@ -1,3 +1,18 @@
 #suggestion {
   display: none;
 }
+
+#desiredJobError{
+  display: none;
+  color: #cc0000;
+}
+
+#companyTypeError {
+  display: none;
+  color: #cc0000;
+}
+
+#languageTypeError {
+  display: none;
+  color: #cc0000;
+}

@@ -14,41 +14,70 @@
       <h4>Answer these questions and this site will suggest an Epicodus track.</h4>
       <form id="formOne">
         <div class="form-group">
+          <label for="yourName">Your name:</label>
+          <input id="yourName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
           <label for="desiredJob">What do you want to do?</label>
           <select class="form-control" id="desiredJob">
-            <option>General software</option>
-            <option>Games</option>
-            <option>Backend</option>
-            <option>Interactive web apps</option>
+            <option value="0">General software</option>
+            <option value="1">Games</option>
+            <option value="2">Backend</option>
+            <option value="3">Interactive web apps</option>
           </select>
+          <div id="desiredJobError">
+            Please pick something!
+          </div>
         </div>
         <div class="form-group">
           <label for="companyType">Where would you like to work?</label>
           <div class="radio">
             <label>
-              <input type="radio" name="companyType" value="large">
+              <input type="radio" name="companyType" value="0">
               A large enterprise
             </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="companyType" value="government">
+                <input type="radio" name="companyType" value="1">
                 A government agency
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="companyType" value="startups">
+                <input type="radio" name="companyType" value="2">
                 A small startup
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="companyType" value="independent">
+                <input type="radio" name="companyType" value="3">
                 An independent company
               </label>
             </div>
+            <div id="companyTypeError">
+              Please pick something!
+            </div>
         </div>
+        <div class="form-group">
+          <label for="languageType">Interpeted or compiled?</label>
+          <select class="form-control" id="languageType">
+            <option value="0">Interpreted</option>
+            <option value="1">Compiled</option>
+            <option value="2">Bytecode</option>
+          </select>
+          <div id="languageTypeError">
+            Please pick something!
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="kungFu">Do you like Kung Fu?</label>
+          <select class="form-control" id="kungFu">
+            <option>Yes</option>
+            <option>No</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Submit</button>
 
       </form>
 
