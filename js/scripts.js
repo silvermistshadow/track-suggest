@@ -88,6 +88,9 @@ $(document).ready(function(){
     var langRuby = 0;
     var langPHP = 0;
 
+    $("#suggestion").text(trackSuggestion);
+
+
   });
 
 });
