@@ -4,12 +4,15 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
   if ((desiredJob === 0) || (desiredJob === 1)) {
     ++langC;
     ++langJava;
+    $("#desiredJobError").hide();
   }
   else if (desiredJob === 2) {
     ++langPHP;
+    $("#desiredJobError").hide();
   }
   else if (desiredJob === 3) {
     ++langRuby;
+    $("#desiredJobError").hide();
   }
   else {
     $("#desiredJobError").show();
@@ -19,11 +22,13 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
     ++langC;
     ++langJava;
     ++langPHP;
+    $("#companyTypeError").hide();
   }
   else if ((companyType === 2) || (companyType === 3)) {
     ++langRuby;
     ++langPHP;
     ++langJava;
+    $("#companyTypeError").hide();
   }
   else {
     $("#companyTypeError").show();
@@ -32,12 +37,18 @@ var trackSuggestion = function(langC, langJava, langPHP, langRuby) {
   if (languageType === 0) {
     ++langRuby
     ++langPHP
+    $("languageTypeError").hide()
   }
   else if (languageType === 1) {
     ++langC
+    $("languageTypeError").hide()
   }
   else if (languageType === 2) {
     ++langJava
+    $("languageTypeError").hide()
+  }
+  else {
+    $("languageTypeError").show();
   }
 
   if ((langC > langJava) && (langC > langPHP) && (langC > langRuby)) {
