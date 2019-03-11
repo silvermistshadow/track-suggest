@@ -92,15 +92,8 @@ $(document).ready(function(){
     var desiredJob = parseInt($("#desiredJob").val());
     var companyType = parseInt($("input:radio[name=companyType]:checked").val());
     var languageType = parseInt($("#languageType").val());
-
-
-
+    
     var result = trackSuggestion(desiredJob, companyType, languageType);
-    console.log(desiredJob);
-    console.log(langC+"C");
-    console.log(langJava);
-    console.log(langPHP);
-    console.log(langRuby);
 
     $("#suggestion").text(result);
     $("#suggestion").show();
