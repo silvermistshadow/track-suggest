@@ -1,5 +1,6 @@
 #suggestion {
   display: none;
+  color: #5cb85c;
 }
 
 #desiredJobError{
@@ -15,4 +16,8 @@
 #languageTypeError {
   display: none;
   color: #cc0000;
+}
+
+#formOne {
+  max-width: 500px;
 }
