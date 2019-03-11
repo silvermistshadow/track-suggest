@@ -2,7 +2,7 @@
 
 #### _A site to suggest Epicodus tracks , 3-11-2019_
 
-#### By _**{List of contributors}**_
+#### By _**BM**_
 
 ## Description
 
