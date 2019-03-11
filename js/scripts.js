@@ -6,8 +6,8 @@ var langPHP = 0;
 
 var trackSuggestion = function(desiredJob, companyType, languageType) {
   if ((desiredJob === 0) || (desiredJob === 1)) {
-    langC++;
-    langJava++;
+    ++langC;
+    ++langJava;
     $("#desiredJobError").hide();
   }
   else if (desiredJob === 2) {
@@ -92,7 +92,7 @@ $(document).ready(function(){
     var desiredJob = parseInt($("#desiredJob").val());
     var companyType = parseInt($("input:radio[name=companyType]:checked").val());
     var languageType = parseInt($("#languageType").val());
-    
+
     var result = trackSuggestion(desiredJob, companyType, languageType);
 
     $("#suggestion").text(result);
