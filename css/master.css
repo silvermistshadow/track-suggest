@@ -1,3 +1,10 @@
+body {
+  background-color: #e2edff;
+  background-image: url("../img/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #suggestion {
   display: none;
   color: #5cb85c;
@@ -20,4 +27,5 @@
 
 #formOne {
   max-width: 500px;
+  border: 15px;
 }
