@@ -28,4 +28,6 @@ body {
 #formOne {
   max-width: 500px;
   border: 15px;
+  margin: 12px;
+  padding: 12px;
 }
